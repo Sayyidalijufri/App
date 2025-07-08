@@ -41,7 +41,6 @@ function Onfido({sdkToken, onSuccess, onError, onUserExit}: OnfidoProps) {
         };
     }, []);
 
-    useEffect(() => {}, []);
 
     return (
         <BaseOnfidoWeb
