@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EXPO-VIEWCONTROLLER-1">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="EXPO-SCENE-1">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreenViewController" id="EXPO-VIEWCONTROLLER-1" sceneMemberID="viewController">
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EXPO-ContainerView" userLabel="ContainerView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="BootSplashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="EXPO-SplashScreenLogo" userLabel="SplashScreenLogo">
+                                <rect key="frame" x="147.5" y="303.5" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="EXPO-SplashScreenLogo-Height"/>
+                                    <constraint firstAttribute="width" constant="80" id="EXPO-SplashScreenLogo-Width"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <!-- FIXED: Updated background color to #03D47C in sRGB color space -->
+                        <!-- Previous: red="0.0117647058823529" green="0.831372549019608" blue="0.486274509803922" (#60D184) -->
+                        <!-- Fixed: Precise sRGB values for #03D47C -->
+                        <color key="backgroundColor" red="0.011764705882352941" green="0.8313725490196079" blue="0.48627450980392156" alpha="1" colorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EXPO-SplashScreenLogo" firstAttribute="centerX" secondItem="EXPO-ContainerView" secondAttribute="centerX" id="EXPO-SplashScreenLogo-CenterX"/>
+                            <constraint firstItem="EXPO-SplashScreenLogo" firstAttribute="centerY" secondItem="EXPO-ContainerView" secondAttribute="centerY" id="EXPO-SplashScreenLogo-CenterY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EXPO-SafeArea"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EXPO-PLACEHOLDER-1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.625" y="129.4921875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BootSplashLogo" width="80" height="60"/>
+    </resources>
+</document>
