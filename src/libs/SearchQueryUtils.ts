@@ -607,8 +607,7 @@ function buildFilterFormValuesFromQuery(
                       .map((item) => Object.values(item ?? {}).map((category) => category.name))
                       .flat()
                 : Object.values(policyCategories ?? {})
-                      .map((item) => Object.values(item ?? {}).map((category) => category.name))
-                      .flat();
+                      .flatMap((item) => Object.values(item ?? {}).map((category) => category.name));
             const uniqueCategories = new Set(categories);
             const emptyCategories = CONST.SEARCH.CATEGORY_EMPTY_VALUE.split(',');
             const hasEmptyCategoriesInFilter = emptyCategories.every((category) => filterValues.includes(category));

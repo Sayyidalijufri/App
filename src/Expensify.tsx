@@ -50,7 +50,9 @@ import type {ScreenShareRequest} from './types/onyx';
 Onyx.registerLogger(({level, message, parameters}) => {
     if (level === 'alert') {
         Log.alert(message, parameters);
-        console.error(message);
+        if (Environment.isDevelopment()) {
+            console.error(message);
+        }
 
         // useOnyx() calls with "canBeMissing" config set to false will display a visual alert in dev environment
         // when they don't return data.
