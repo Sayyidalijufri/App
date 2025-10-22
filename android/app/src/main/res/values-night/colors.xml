@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- VERIFIED: Consistent #03D47C color for bootsplash_background in night mode -->
+    <color name="bootsplash_background">#03D47C</color>
+    <color name="primary_text">#FFFFFF</color>
+    <color name="secondary_text">#CCCCCC</color>
+</resources>
